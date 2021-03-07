@@ -1,9 +1,9 @@
 board=[" "," "," "," "," "," "," "," "," "]
 
 def valid_move?(board, index)
-  if !position_taken? && index>=0 && index<=8
+  if !position_taken?(board, index) && index>=0 && index<=8
     true
-  elsif poairion_taken || index<0 || index>8
+  else
     false
   end
 end
