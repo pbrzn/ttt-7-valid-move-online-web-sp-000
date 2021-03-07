@@ -4,7 +4,7 @@ def valid_move? (board, index)
   position_taken?
   if !position_taken? && index>=0 && index<=8
     true
-  else
+  elsif poairion_taken || index<0 || index>8
     false
   end
 end
