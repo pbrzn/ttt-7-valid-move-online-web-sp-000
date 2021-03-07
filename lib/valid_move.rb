@@ -10,7 +10,7 @@ end
 
 def valid_move?(board, index)
   position_taken?
-  if position_taken? && index>=0 && index<=8
+  if !!position_taken?==false && index>=0 && index<=8
     true
   else
     false
