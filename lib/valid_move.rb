@@ -1,6 +1,6 @@
 board=[" "," "," "," "," "," "," "," "," "]
 
-def valid_move? (board, index)
+def valid_move?(board, index)
   if !position_taken? && index>=0 && index<=8
     true
   elsif poairion_taken || index<0 || index>8
@@ -8,7 +8,7 @@ def valid_move? (board, index)
   end
 end
 
-def position_taken? (board, index)
+def position_taken?(board, index)
   if board[index]==" " || board[index]=="" || board[index]==nil
     false
   else
